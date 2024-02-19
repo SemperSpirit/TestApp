@@ -15,12 +15,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var passwordIcon: UIImageView!
     @IBOutlet weak var loginIcon: UIImageView!
+    @IBOutlet weak var passwordHint: UILabel!
+    @IBOutlet weak var loginButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
+    @IBAction func enterInAccount(_ sender: String) {
+        print("Succsess")
+    }
 }
 
