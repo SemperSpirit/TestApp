@@ -17,6 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background sky" translatesAutoresizingMaskIntoConstraints="NO" id="ZTB-si-FLX">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3K1-K7-eLj">
                                 <rect key="frame" x="100" y="193" width="230" height="62.666666666666657"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="52"/>
@@ -28,20 +31,26 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="3K1-K7-eLj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="134" id="0lW-sj-k8i"/>
+                            <constraint firstItem="ZTB-si-FLX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ai8-Eg-XPO"/>
+                            <constraint firstItem="ZTB-si-FLX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="J2c-hG-gYa"/>
+                            <constraint firstAttribute="bottom" secondItem="ZTB-si-FLX" secondAttribute="bottom" id="Uox-QG-r5g"/>
                             <constraint firstItem="3K1-K7-eLj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="hsn-H3-t0o"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3K1-K7-eLj" secondAttribute="trailing" constant="100" id="lsA-XB-KRw"/>
+                            <constraint firstItem="ZTB-si-FLX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="zeb-dD-Afr"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="background" destination="ZTB-si-FLX" id="8fe-4N-gJq"/>
                         <outlet property="loginLabel" destination="3K1-K7-eLj" id="bol-56-cpc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="54.198473282442748" y="-34.507042253521128"/>
+            <point key="canvasLocation" x="53.02325581395349" y="-34.763948497854081"/>
         </scene>
     </scenes>
     <resources>
+        <image name="background sky" width="1080" height="1920"/>
         <systemColor name="secondarySystemGroupedBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
