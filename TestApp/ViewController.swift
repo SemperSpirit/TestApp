@@ -17,12 +17,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var loginIcon: UIImageView!
     @IBOutlet weak var passwordHint: UILabel!
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var labelHint: UILabel!
+    @IBOutlet weak var buttons: UIStackView!
+    @IBOutlet weak var strip: UIView!
+    @IBOutlet weak var labelConnect: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     @IBAction func enterInAccount(_ sender: String) {
-        print("Succsess")
+        print("Success")
     }
 }
 
